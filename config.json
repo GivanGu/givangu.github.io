@@ -4,12 +4,13 @@
     "avatarUrl":"https://avatars.githubusercontent.com/u/30004258?v=4",
     "GMEEK_VERSION":"last",
     
-    "i18n":"CN",
+    "i18n":["CN","EN"],
     "UTC":8,
     "startSite":"06/20/2024",
     "yearColorList":["#bc4c00", "#0969da", "#1f883d", "#A333D0"],
     "filingNum":"桂ICP备2024034736号",
     "bottomText":"❤️ 转载文章请注明出处，谢谢！❤️",
+    "singlePage":["link","about"],
     "commentLabelColor":"#006b75"
 
 }
