@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="en">
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -10,24 +10,10 @@
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
 <meta name="description" content="### 安装virtualenv
-virtualenv是一个Python包，我们采用pip(Python的包管理器)来安装。假设我们已经安装好了pip，就可以使用pip来安装我们所需要的包。
-```shell
-$ pip install virtualenv
-```
-### 创建Python虚拟环境
-利用 virtualenv [虚拟环境名称] 来创建虚拟Python环境，在虚拟环境里用pip安装的包都会安装到当前的虚拟环境中。
-```bash
-$ virtualenv .">
+virtualenv是一个Python包，我们采用pip(Python的包管理器)来安装。">
 <meta property="og:title" content="Virtualenv（Python虚拟环境搭建）">
 <meta property="og:description" content="### 安装virtualenv
-virtualenv是一个Python包，我们采用pip(Python的包管理器)来安装。假设我们已经安装好了pip，就可以使用pip来安装我们所需要的包。
-```shell
-$ pip install virtualenv
-```
-### 创建Python虚拟环境
-利用 virtualenv [虚拟环境名称] 来创建虚拟Python环境，在虚拟环境里用pip安装的包都会安装到当前的虚拟环境中。
-```bash
-$ virtualenv .">
+virtualenv是一个Python包，我们采用pip(Python的包管理器)来安装。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://blog.gcydia.cn/post/Virtualenv%EF%BC%88Python-xu-ni-huan-jing-da-jian-%EF%BC%89.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/30004258?v=4">
@@ -64,7 +50,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="header">
 <h1 class="postTitle">Virtualenv（Python虚拟环境搭建）</h1>
 <div class="title-right">
-    <a href="https://blog.gcydia.cn" id="buttonHome" class="btn btn-invisible circle" title="home">
+    <a href="https://blog.gcydia.cn" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
             <path id="pathHome" fill-rule="evenodd"></path>
         </svg>
@@ -77,7 +63,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     </a>
     
 
-    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="switch theme">
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
         <svg class="octicon" width="16" height="16" >
             <path id="themeSwitch" fill-rule="evenodd"></path>
         </svg>
@@ -107,7 +93,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <div class="highlight highlight-source-shell"><pre class="notranslate">(.venv)[...]$ deactivate
 [...]$</pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;">❤️ 转载文章请注明出处，谢谢！❤️</div>
-<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">comments</button>
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
 </div>
     <div id="footer">Copyright © <span id="year"></span><a href="https://blog.gcydia.cn"> 不辞青山 </a>
@@ -122,8 +108,8 @@ if("06/20/2024"!=""){
     var diff=now.getTime()-startSite.getTime();
     var diffDay=Math.floor(diff/(1000*60*60*24));
     document.getElementById("year").innerHTML=now.getFullYear();
-    if("桂ICP备2024034736号"!=""){document.getElementById("runday").innerHTML=" • "+"run "+diffDay+" days"+" • ";}
-    else{document.getElementById("runday").innerHTML="run "+diffDay+" days"+" • ";}
+    if("桂ICP备2024034736号"!=""){document.getElementById("runday").innerHTML=" • "+"网站运行"+diffDay+"天"+" • ";}
+    else{document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";}
 }
 </script>
 </div>
