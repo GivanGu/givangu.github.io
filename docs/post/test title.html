@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="en">
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -9,9 +9,9 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="test text。">
+<meta name="description" content="test text.">
 <meta property="og:title" content="test title">
-<meta property="og:description" content="test text。">
+<meta property="og:description" content="test text.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://givangu.github.io/post/test%20title.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/30004258?v=4">
@@ -48,7 +48,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="header">
 <h1 class="postTitle">test title</h1>
 <div class="title-right">
-    <a href="https://givangu.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+    <a href="https://givangu.github.io" id="buttonHome" class="btn btn-invisible circle" title="home">
         <svg class="octicon" width="16" height="16">
             <path id="pathHome" fill-rule="evenodd"></path>
         </svg>
@@ -61,7 +61,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     </a>
     
 
-    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="switch theme">
         <svg class="octicon" width="16" height="16" >
             <path id="themeSwitch" fill-rule="evenodd"></path>
         </svg>
@@ -72,7 +72,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div class="markdown-body" id="postBody"><p>test text</p></div>
 <div style="font-size:small;margin-top:8px;float:right;">❤️ 转载文章请注明出处，谢谢！❤️</div>
-<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">comments</button>
 <div class="comments" id="comments"></div>
 </div>
     <div id="footer">Copyright © <span id="year"></span><a href="https://givangu.github.io"> GivanGu Blog </a>
@@ -87,8 +87,8 @@ if("06/20/2024"!=""){
     var diff=now.getTime()-startSite.getTime();
     var diffDay=Math.floor(diff/(1000*60*60*24));
     document.getElementById("year").innerHTML=now.getFullYear();
-    if("桂ICP备2024034736号"!=""){document.getElementById("runday").innerHTML=" • "+"网站运行"+diffDay+"天"+" • ";}
-    else{document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";}
+    if("桂ICP备2024034736号"!=""){document.getElementById("runday").innerHTML=" • "+"run "+diffDay+" days"+" • ";}
+    else{document.getElementById("runday").innerHTML="run "+diffDay+" days"+" • ";}
 }
 </script>
 </div>
