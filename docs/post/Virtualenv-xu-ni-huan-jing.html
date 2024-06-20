@@ -77,21 +77,20 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <div class="highlight highlight-source-shell"><pre class="notranslate">$ pip install virtualenv</pre></div>
 <h3>创建Python虚拟环境</h3>
 <p>利用 virtualenv [虚拟环境名称] 来创建虚拟Python环境，在虚拟环境里用pip安装的包都会安装到当前的虚拟环境中。</p>
-<div class="highlight highlight-source-shell"><pre class="notranslate">$ virtualenv cms</pre></div>
+<div class="highlight highlight-source-shell"><pre class="notranslate">$ virtualenv .venv</pre></div>
 <p>如果系统里安装了不同的Python版本，可以使用--python来指定虚拟环境的python版本。</p>
-<div class="highlight highlight-source-shell"><pre class="notranslate">$ virtualenv --python /usr/local/webserver/python3.6/bin/python3.6 cms</pre></div>
+<div class="highlight highlight-source-shell"><pre class="notranslate">$ virtualenv --python /usr/local/webserver/python3.6/bin/python3.6 .venv</pre></div>
 <p>默认情况下虚拟环境不会依赖系统环境的site-packages，如果想依赖系统环境的site-packages，可以使用--system-site-packages来设置。</p>
-<div class="highlight highlight-source-shell"><pre class="notranslate">$ virtualenv --system-site-packages cms</pre></div>
+<div class="highlight highlight-source-shell"><pre class="notranslate">$ virtualenv --system-site-packages .venv</pre></div>
 <h3>启动和退出虚拟环境</h3>
 <p>启动虚拟环境：activate</p>
-<div class="highlight highlight-source-shell"><pre class="notranslate">[...]$ <span class="pl-c1">source</span> cms/bin/activate
-(cms)[...]$
+<div class="highlight highlight-source-shell"><pre class="notranslate">[...]$ <span class="pl-c1">source</span> .venv/bin/activate
+(.venv)[...]$
 
 <span class="pl-c"><span class="pl-c">#</span> 激活Virtualenv虚拟环境</span>
-<span class="pl-c1">source</span> /mnt/data/gupengxun/pdf2txt/.venv/bin/activate
-<span class="pl-c1">source</span> /mnt/data/gupengxun/macrotools/.venv/bin/activate</pre></div>
+<span class="pl-c1">source</span> ./.venv/bin/activate</pre></div>
 <p>退出虚拟环境：deactivate</p>
-<div class="highlight highlight-source-shell"><pre class="notranslate">(cms)[...]$ deactivate
+<div class="highlight highlight-source-shell"><pre class="notranslate">(.venv)[...]$ deactivate
 [...]$</pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
