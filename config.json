@@ -2,5 +2,12 @@
     "title":"GivanGu Blog",
     "subTitle":"Daily Essays",
     "avatarUrl":"https://avatars.githubusercontent.com/u/30004258?v=4",
-    "GMEEK_VERSION":"last"
+    "GMEEK_VERSION":"last",
+    
+    "i18n":"CN",
+    "UTC":8,
+    "startSite":"06/20/2024",
+    "yearColorList":["#bc4c00", "#0969da", "#1f883d", "#A333D0"],
+    "commentLabelColor":"#006b75",
+
 }
